@@ -13,47 +13,13 @@ $ npm install --save demo-bot-update
 ## Usage
 
 ```js
+const m = require('demo-bot-update');
 
-```
-
-
-## API
-
-### Plugin(config)
-
-Returns a `Plugin` instance.
-
-#### config
-
-##### id
-
-Type: `string`<br>
-Required: `true`
-
-Plugin identifier.
-
-##### questions
-
-Type: `object[]`<br>
-Default: `[]`
-
-Questions to be prompted ([`Inquerier Questions`](https://github.com/SBoudrias/Inquirer.js#questions))
-
-##### handler
-
-Type: `Function`<br>
-Default: `answers => {}`
-
-Handler that gets called with answers after user answers questions.
-
-##### before
-
-Type: `Function`<br>
-Default: `() => {}`
-
-Hook that gets called before. Makes it possible to perform any actions before questions, handler or run is called.
-
-```js
+m.updateAvailable().then(result => {
+	if (result) {
+		m.applyUpdate();
+	}
+});
 ```
 
 ## Related
