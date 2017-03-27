@@ -1,0 +1,30 @@
+{
+  "name": "demo-bot-update",
+  "version": "0.0.0",
+  "description": "Demo Bot Update",
+  "main": "index.js",
+  "scripts": {
+    "test": "xo && ava --verbose",
+    "predeploy": "npm version patch",
+    "deploy": "npm publish",
+    "postdeploy": "git push && git push --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dohjon/demo-bot-update.git"
+  },
+  "keywords": [],
+  "author": "Jonathan Doherty <jonathan.doherty.work@outlook.com> (https://github.com/dohjon)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dohjon/demo-bot-update/issues"
+  },
+  "homepage": "https://github.com/dohjon/demo-bot-update#readme",
+  "devDependencies": {
+    "ava": "0.18.2",
+    "xo": "0.18.0"
+  },
+  "dependencies": {
+    "debug": "2.6.3"
+  }
+}
