@@ -25,6 +25,7 @@ m.updateAvailable().then(result => {
 ## Related
 
 - [demo-bot](https://github.com/dohjon/demo-bot) - Demo Bot
+- [demo-bot-plugin](https://github.com/dohjon/demo-bot-plugin) - Demo Bot Plugin
 
 ## License
 
